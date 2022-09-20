@@ -24,10 +24,14 @@ public class Main {
         students.add(student2);
         students.add(student3);
 
-        students.get(0).setFeesPaid(60000);
-
-
         School school = new School(teachers, students);
+        student1.paidFees(60000);
+        student2.paidFees(60000);
+        student3.paidFees(60000);
+
+        teacher1.revertSalaryOfTeacher(teacher1.getSalaryOfTeacher());
+
+
         System.out.println("School has earned " + school.getTotalMoneyEarned());
         System.out.println("School has spent " + school.getTotalMoneySpent());
 

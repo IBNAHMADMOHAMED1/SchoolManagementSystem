@@ -95,6 +95,14 @@ public class Student {
     public void setTypeOfEducation(String typeOfEducation) {
         TypeOfEducation = typeOfEducation;
     }
+
+    public void paidFees(int fees) {
+        feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
+    }
     
+    public int getRemainingFees() {
+        return feesTotal - feesPaid;
+    }
     
 }

@@ -37,6 +37,12 @@ public class Teacher {
             School.updateTotalMoneySpent(salaryOfTeacher);
         }
 
+        public void revertSalaryOfTeacher(int salaryOfTeacher) {
+            this.salaryOfTeacher += salaryOfTeacher;
+            School.updateTotalMoneySpent(salaryOfTeacher);
+        }
+
+
 
     
        
