@@ -1,4 +1,4 @@
-package schoolmanagementsystem;
+package src.School;
 
 import java.util.List;
 import java.util.ArrayList;

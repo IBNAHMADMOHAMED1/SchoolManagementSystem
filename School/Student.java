@@ -1,4 +1,4 @@
-package schoolmanagementsystem;
+package src.School;
 
 public class Student {
 
